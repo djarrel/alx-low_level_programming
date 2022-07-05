@@ -16,10 +16,10 @@ int main(void)
 
 	printf("%ld, ", x);
 	printf("%ld, ", y);
-	for (i = 1; i <= 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		z = x + y;
-		if (i != 50 )
+		if (i != 50)
 		{
 			printf("%ld, ", z);
 			x = y;
