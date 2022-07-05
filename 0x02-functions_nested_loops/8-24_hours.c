@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * jack_bauer - print time
+*/
+
 void jack_bauer(void)
 {
 	int i, j, m, n;
@@ -10,13 +14,13 @@ void jack_bauer(void)
 		{
 			for (m = 0; m < 6; m++)
 			{
-				for (n = 0; m <= 9; n++)
+				for (n = 0; n <= 9; n++)
 				{
-					_putchar(i + '0');
-					_putchar(j + '0');
+					_putchar('0' + i);
+					_putchar('0' + j);
 					_putchar(':');
-					_putchar(m + '0');
-					_putchar(n + '0');
+					_putchar('0' + m);
+					_putchar('0' + n);
 					_putchar('\n');
 				}
 			}
