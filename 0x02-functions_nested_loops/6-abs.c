@@ -2,7 +2,7 @@
 /**
  * _abs - prints the absolutr value
  * @i: takes integer values
- * Return: 0 success
+ * Return: i and r shows absolute value
 */
 
 int _abs(int i)
@@ -11,11 +11,11 @@ int _abs(int i)
 
 	if (i >= 0)
 	{
-		return(i);
+		return (i);
 	}
 	else
 	{
 		r = i * -1;
-                return(r);
+		return (r);
 	}
 }
