@@ -4,24 +4,26 @@
  * main - sum even-valued terms of Fibonacci sequence under 4,000,000
  * Return: 0 if succesful
  */
-
 int main(void)
 {
-	int a, b, x, sum;
+	int i;
+	long int onebefore, twobefore, current;
+	long int evenfibsum;
 
-	a = 1;
-	b = 2;
-	x = a + b;
-	sum = 2;
-	while (x <= 4000000)
+	onebefore = 1;
+	twobefore = 1;
+	current = 2;
+	evenfibsum = 2;
+
+	for (i = 2; current < 4000000; i++)
 	{
-		if ((x % 2) == 0)
-		{
-			sum = sum + x;
-		}
-		a = b;
-		b = x;
+		twobefore = onebefore;
+		onebefore = current;
+		current = twobefore + onebefore;
+
+		if (!(current % 2))
+			evenfibsum += current;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", evenfibsum);
 	return (0);
 }
