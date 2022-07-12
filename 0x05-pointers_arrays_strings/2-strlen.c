@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _strlen - coubt string length
+ * @s: character
+ * Return: count
+ */
 int _strlen(char *s)
 {
 	int i;
