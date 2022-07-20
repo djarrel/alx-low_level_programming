@@ -5,7 +5,7 @@
  * @b: divisor to check if its a square root
  * Return: natural square root or -1
  */
-int check_dividor(int a, int b)
+int check_divisor(int a, int b)
 {
 	if (b * b == a)
 	{
