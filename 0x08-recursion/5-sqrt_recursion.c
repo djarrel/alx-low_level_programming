@@ -15,7 +15,7 @@ int check_divisor(int a, int b)
 	{
 		return (-1);
 	}
-	return (chack_divisor(a, b + 1));
+	return (check_divisor(a, b + 1));
 }
 
 /**
